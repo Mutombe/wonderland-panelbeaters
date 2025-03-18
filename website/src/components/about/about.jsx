@@ -14,8 +14,10 @@ import {
   Mail,
   Clock
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const AboutPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Parallax */}
@@ -354,7 +356,8 @@ const AboutPage = () => {
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+                          whileTap={{ scale: 0.95 }}
+              onClick={() => navigate('/contact')}
               className="bg-white text-red-600 hover:bg-white/90 px-10 py-4 rounded-full font-semibold text-lg"
             >
               Get in Touch

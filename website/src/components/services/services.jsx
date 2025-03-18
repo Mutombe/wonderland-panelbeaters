@@ -4,10 +4,12 @@ import {
   Car, PaintBucket, Wrench, Shield, Clock, CheckCircle,
   Cog, FileText, AlertCircle, Camera, ArrowRight, Phone
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const ServicesPage = () => {
   const [selectedService, setSelectedService] = useState(null);
-
+  const navigate = useNavigate();
+    
   const mainServices = [
     {
       id: 1,
@@ -233,7 +235,8 @@ const ServicesPage = () => {
               </motion.a>
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                              whileTap={{ scale: 0.95 }}
+                onClick={() => navigate('/contact')}
                 className="border-2 border-white px-8 py-4 rounded-full font-semibold"
               >
                 Request Quote

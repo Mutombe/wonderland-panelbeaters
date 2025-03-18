@@ -502,14 +502,16 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                              whileTap={{ scale: 0.95 }}
+                              onClick={() => navigate("/contact")}
                 className="bg-red-500 hover:bg-red-600 px-8 py-4 rounded-full font-semibold"
               >
                 Get Free Quote
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                              whileTap={{ scale: 0.95 }}
+                              onClick={() => navigate("/gallery")}
                 className="border-2 border-white px-8 py-4 rounded-full font-semibold"
               >
                 View Our Work

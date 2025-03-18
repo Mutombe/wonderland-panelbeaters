@@ -13,12 +13,14 @@ import {
   MessageCircle,
   Star
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const GalleryPage = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [isComparisonModalOpen, setIsComparisonModalOpen] = useState(false);
   const [currentComparisonIndex, setCurrentComparisonIndex] = useState(0);
-  const [sliderValue, setSliderValue] = useState(50);
+    const [sliderValue, setSliderValue] = useState(50);
+    const navigate = useNavigate();
   const sliderRef = useRef(null);
   
   // Categories for filtering
@@ -169,7 +171,8 @@ const GalleryPage = () => {
             
             <motion.button
               whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+                          whileTap={{ scale: 0.95 }}
+              onClick={() => navigate('/contact')}
               className="bg-red-500 hover:bg-red-600 px-8 py-4 rounded-full font-semibold flex items-center gap-2"
             >
               <Camera size={20} />
@@ -315,7 +318,8 @@ const GalleryPage = () => {
               </motion.a>
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                              whileTap={{ scale: 0.95 }}
+                onClick={() => navigate("/contact")}
                 className="border-2 border-white/30 hover:border-white bg-white/10 backdrop-blur-sm px-8 py-4 rounded-full font-semibold flex items-center gap-2 justify-center"
               >
                 Get Free Quote
