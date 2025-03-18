@@ -58,13 +58,13 @@ const ContactPage = () => {
     {
       icon: <Mail size={24} />,
       title: 'Email Us',
-      details: ['info@autobodyshop.com', 'quotes@autobodyshop.com'],
-      action: { text: 'Send Email', href: 'mailto:info@autobodyshop.com' }
+      details: ['info@wonderland.co.zw', 'admin@wonderland.co.zw'],
+      action: { text: 'Send Email', href: 'mailto:info@wonderland.co.zw' }
     },
     {
       icon: <MapPin size={24} />,
       title: 'Visit Us',
-      details: ['123 Repair Street', 'Harare, Zimbabwe'],
+      details: ['17025 Cedora Road, Graniteside', 'Harare, Zimbabwe'],
       action: { text: 'Get Directions', href: '#' }
     },
     {

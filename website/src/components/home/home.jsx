@@ -54,8 +54,6 @@ const HomePage = () => {
   }, []);
 
   const stats = [
-    { number: "15+", label: "Years Experience" },
-    { number: "5000+", label: "Cars Repaired" },
     { number: "99%", label: "Satisfied Clients" },
     { number: "24/7", label: "Support" },
   ];
@@ -156,29 +154,11 @@ const HomePage = () => {
           </motion.div>
         </div>
 
+        <MagicalStats />
+
         {/* Floating Stats */}
-        <div className="absolute bottom-0 left-0 right-0 bg-black/30 backdrop-blur-md">
-          <div className="container mx-auto px-4 py-6">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                  className="text-center text-white p-4"
-                >
-                  <div className="text-2xl sm:text-3xl font-bold text-red-500 mb-1">
-                    {stat.number}
-                  </div>
-                  <div className="text-xs sm:text-sm text-white/80">
-                    {stat.label}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
+
+        
       </section>
       <FeaturedServicesSection2 />
 
@@ -478,6 +458,7 @@ const HomePage = () => {
           <div className="mt-16 text-center">
             <motion.button
               whileHover={{ scale: 1.05 }}
+              onClick={() => navigate("/contact")}
               whileTap={{ scale: 0.95 }}
               className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 mx-auto"
             >
@@ -1591,5 +1572,122 @@ const FeaturedServicesSection2 = () => {
       </div>
     </section>
   );
+};
+
+const MagicalStats = () => {
+  const stats = [
+    { number: 99, label: "Satisfied Clients", suffix: "%" },
+    { number: 24, label: "Support", prefix: "", suffix: "/7" },
+  ];
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  // Particle component
+  const Particle = ({ delay }) => (
+    <motion.div
+      className="absolute w-1 h-1 bg-red-400 rounded-full"
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{
+        opacity: [0, 1, 0],
+        scale: [0, 1.5, 0],
+        y: [0, -40, -60],
+        x: Math.random() * 40 - 20,
+      }}
+      transition={{
+        duration: 2,
+        delay,
+        repeat: Infinity,
+        ease: "easeOut"
+      }}
+    />
+  );
+
+  return (
+    <div className="absolute bottom-0 left-0 right-0 bg-black/30 backdrop-blur-md">
+      <div className="container mx-auto px-4 py-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+          {stats.map((stat, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2 }}
+              className="text-center text-white p-4 relative"
+            >
+              <div className="relative">
+                {/* Particles */}
+                {[...Array(5)].map((_, i) => (
+                  <Particle key={i} delay={i * 0.2} />
+                ))}
+                
+                <motion.div
+                  className="text-2xl sm:text-3xl font-bold text-red-500 mb-1"
+                  initial={{ opacity: 0 }}
+                  animate={isVisible ? { opacity: 1 } : {}}
+                >
+                  <motion.span>
+                    {stat.prefix}
+                    <motion.span
+                      initial={{ opacity: 0 }}
+                      animate={isVisible ? { opacity: 1 } : {}}
+                      transition={{ duration: 0.5, delay: index * 0.2 }}
+                    >
+                      {isVisible && (
+                        <CountUp
+                          from={0}
+                          to={stat.number}
+                          duration={2}
+                        />
+                      )}
+                    </motion.span>
+                    {stat.suffix}
+                  </motion.span>
+                </motion.div>
+                <div className="text-xs sm:text-sm text-white/80">
+                  {stat.label}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Counter component
+const CountUp = ({ from, to, duration }) => {
+  const [count, setCount] = useState(from);
+
+  useEffect(() => {
+    let startTime;
+    let animationFrame;
+
+    const animate = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = (timestamp - startTime) / (duration * 1000);
+
+      if (progress < 1) {
+        setCount(Math.floor(from + (to - from) * progress));
+        animationFrame = requestAnimationFrame(animate);
+      } else {
+        setCount(to);
+      }
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+      }
+    };
+  }, [from, to, duration]);
+
+  return <>{count}</>;
 };
 
