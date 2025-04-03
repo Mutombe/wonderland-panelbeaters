@@ -58,8 +58,8 @@ const ContactPage = () => {
     {
       icon: <Mail size={24} />,
       title: 'Email Us',
-      details: ['info@wonderland.co.zw', 'admin@wonderland.co.zw'],
-      action: { text: 'Send Email', href: 'mailto:info@wonderland.co.zw' }
+      details: [ 'admin@wonderland.co.zw', 'wonderpbtrs@gmail.com',],
+      action: { text: 'Send Email', href: 'mailto:admin@wonderland.co.zw' }
     },
     {
       icon: <MapPin size={24} />,

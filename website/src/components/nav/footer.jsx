@@ -4,6 +4,7 @@ import {
   Phone,
   MapPin,
   Clock,
+  Linkedin,
   Instagram,
   Facebook,
   Twitter,
@@ -20,26 +21,26 @@ const Footer = () => {
             <h3 className="font-bold text-xl mb-6">Wonderland Panel Beaters</h3>
             <p className="text-gray-400 mb-6">
               Providing expert auto body repair services with integrity and
-              precision since 2008.
+              precision since 1997.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/wonderlandpanelbeaters?igsh=bTFjOGEzaHRtaWh2&utm_source=qr"
                 className="text-gray-400 hover:text-white"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="https://www.facebook.com"
+                href="https://facebook.com/wonderlandpanelbeaters"
                 className="text-gray-400 hover:text-white"
               >
                 <Facebook size={20} />
               </a>
               <a
-                href="https://www.twitter.com"
+                href="https://zw.linkedin.com/in/wonderland-panel-beaters-b28515175"
                 className="text-gray-400 hover:text-white"
               >
-                <Twitter size={20} />
+                <Linkedin size={20} />
               </a>
             </div>
           </div>
@@ -80,7 +81,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="/services/collision-repair"
+                  href="/portfolio"
                   className="text-gray-400 hover:text-white"
                 >
                   Collision Repair
@@ -88,7 +89,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/services/dent-removal"
+                  href="/portfolio"
                   className="text-gray-400 hover:text-white"
                 >
                   Dent Removal
@@ -96,7 +97,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/services/paint-restoration"
+                  href="/portfolio"
                   className="text-gray-400 hover:text-white"
                 >
                   Paint Restoration
@@ -104,7 +105,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/services/frame-alignment"
+                  href="/portfolio"
                   className="text-gray-400 hover:text-white"
                 >
                   Frame Alignment
@@ -112,7 +113,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/services/glass-replacement"
+                  href="/portfolio"
                   className="text-gray-400 hover:text-white"
                 >
                   Glass Replacement
@@ -133,10 +134,13 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-red-500" />
                 <span className="text-gray-400">+263 77 233 4587</span>
+                <span className="text-gray-400">+263 77 270 9581</span>
+                <span className="text-gray-400">+263 77 239 2898</span>
+                <span className="text-gray-400">+263 24 275 9547</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-red-500" />
-                <span className="text-gray-400">info@wonderland.co.zw</span>
+                <span className="text-gray-400">admin@wonderland.co.zw</span>
               </li>
               <li className="flex items-center gap-3">
                 <Clock size={16} className="text-red-500" />

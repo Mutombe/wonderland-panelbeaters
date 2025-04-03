@@ -9,6 +9,7 @@ import ServicesPage from './components/services/services';
 import GalleryPage from './components/gallery/gallery';
 import AboutPage from './components/about/about';
 import ContactPage from './components/about/contact';
+import PortfolioPage from './components/gallery/portifolio';
 
 
 const ScrollToTop = () => {
@@ -36,6 +37,7 @@ const App = () => {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/portfolio" element={<PortfolioPage />} />
             </Routes>
           </main>
           <Footer />

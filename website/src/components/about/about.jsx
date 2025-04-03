@@ -26,6 +26,157 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
+export const WonderlandOrgChart = () => {
+  return (
+    <div className="w-full flex justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" className="w-full max-w-4xl">
+        {/* Background */}
+        <rect width="800" height="600" fill="#f9fafb" />
+        
+        {/* Title */}
+        <text x="400" y="40" fontFamily="Arial, sans-serif" fontSize="24" fontWeight="bold" textAnchor="middle" fill="#111827">Wonderland Panel Beaters Organizational Structure</text>
+        
+        {/* Board of Directors */}
+        <rect x="325" y="70" width="150" height="60" rx="5" fill="#ff0000" />
+        <text x="400" y="105" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Board of Directors</text>
+        
+        {/* Vertical Line from Board */}
+        <line x1="400" y1="130" x2="400" y2="160" stroke="#374151" strokeWidth="2" />
+        
+        {/* Secretary */}
+        <rect x="250" y="160" width="160" height="60" rx="5" fill="#ff0000" />
+        <text x="330" y="195" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Secretary</text>
+        
+        {/* Manager Level */}
+        {/* Line Connecting Three Managers */}
+        <line x1="150" y1="260" x2="650" y2="260" stroke="#374151" strokeWidth="2" />
+        {/* Vertical Lines to Managers */}
+        <line x1="150" y1="260" x2="150" y2="290" stroke="#374151" strokeWidth="2" />
+        <line x1="400" y1="160" x2="400" y2="290" stroke="#374151" strokeWidth="2" />
+        <line x1="650" y1="260" x2="650" y2="290" stroke="#374151" strokeWidth="2" />
+        
+        {/* Finance & Admin Manager */}
+        <rect x="50" y="290" width="200" height="60" rx="5" fill="#ff0000" />
+        <text x="150" y="325" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Finance & Administration Manager</text>
+        
+        {/* Sales & Marketing Executive */}
+        <rect x="300" y="290" width="200" height="60" rx="5" fill="#ff0000" />
+        <text x="400" y="325" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Sales & Marketing Executive</text>
+        
+        {/* Workshop Manager */}
+        <rect x="550" y="290" width="200" height="60" rx="5" fill="#ff0000" />
+        <text x="650" y="325" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Workshop Manager</text>
+        
+        {/* Vertical Lines to Next Level */}
+        <line x1="150" y1="350" x2="150" y2="380" stroke="#374151" strokeWidth="2" />
+        <line x1="400" y1="350" x2="400" y2="380" stroke="#374151" strokeWidth="2" />
+        <line x1="650" y1="350" x2="650" y2="380" stroke="#374151" strokeWidth="2" />
+        
+        {/* Administration Staff */}
+        <rect x="75" y="380" width="150" height="60" rx="5" fill="#ff0000" />
+        <text x="150" y="415" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Administration Staff</text>
+        
+        {/* Sales Representative */}
+        <rect x="325" y="380" width="150" height="60" rx="5" fill="#ff0000" />
+        <text x="400" y="415" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Sales Representative</text>
+        
+        {/* Foreman */}
+        <rect x="575" y="380" width="150" height="60" rx="5" fill="#ff0000" />
+        <text x="650" y="415" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Foreman</text>
+        
+        {/* Vertical Lines to Bottom Level */}
+        <line x1="150" y1="440" x2="150" y2="470" stroke="#374151" strokeWidth="2" />
+        <line x1="650" y1="440" x2="650" y2="470" stroke="#374151" strokeWidth="2" />
+        
+        {/* Canteen Staff */}
+        <rect x="75" y="470" width="150" height="60" rx="5" fill="#ff0000" />
+        <text x="150" y="505" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Canteen Staff</text>
+        
+        {/* Workshop Staff */}
+        <rect x="575" y="470" width="150" height="60" rx="5" fill="#ff0000" />
+        <text x="650" y="505" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Workshop Staff</text>
+        
+        {/* Footer */}
+        <text x="400" y="570" fontFamily="Arial, sans-serif" fontSize="12" textAnchor="middle" fill="#374151">Wonderland Panel Beaters (Pvt) Ltd - Established 1997</text>
+      </svg>
+    </div>
+  );
+};
+
+
+export const TermsAndConditions = () => {
+  return (
+    <div className="bg-white py-12 md:py-16">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Terms and Conditions of Business</h2>
+        
+        <div className="bg-gray-50 rounded-xl p-6 md:p-8 shadow-lg">
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-red-600">General Terms</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">1.</span>
+                  <p>All quotations provided are valid for thirty days from date of issue.</p>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">2.</span>
+                  <p>Unless a working relationship is in existence, clients are required to present official orders before commencement of work.</p>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">3.</span>
+                  <p>The client is liable to pay for the job or service following their order, verbal or written, within the explicitly communicated number of days as may be applicable.</p>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">4.</span>
+                  <p>Payment may be effected by POS Machine, Cheque, Cash or RTGS into the company account.</p>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">5.</span>
+                  <p>Cancellation of order must be communicated verbally or in writing before the job is invoiced, otherwise Wonderland Panel Beaters shall be entitled to charge and recover the money from the client.</p>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">6.</span>
+                  <p>In case of litigation in a bid to recover outstanding balances or institution of legal proceedings for the recovery of such monies, the client shall be liable for all costs incurred, inclusive of tracing agents fees and collection commission charge, etc.</p>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-red-600">Service Commitment</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">7.</span>
+                  <p>All repairs are performed by certified technicians using OEM and premium parts.</p>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">8.</span>
+                  <p>Every repair comes with a quality assurance guarantee backed by industry-leading warranties.</p>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 font-bold mr-2">9.</span>
+                  <p>Wonderland Panel Beaters reserves the right to determine the most appropriate repair method to restore vehicles to their pre-accident condition.</p>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-red-600">Company Information</h3>
+              <p className="mb-2"><span className="font-bold">Type of Company:</span> Private Limited company incorporated under the Companies Act (Chapter 24:03)</p>
+              <p className="mb-2"><span className="font-bold">Established:</span> 1997</p>
+              <p className="mb-2"><span className="font-bold">Years in Operation:</span> 26+ years</p>
+            </div>
+          </div>
+          
+          <div className="mt-8 pt-6 border-t border-gray-200">
+            <p className="text-sm text-gray-600 italic">By engaging our services, clients acknowledge that they have read, understood, and agree to abide by these terms and conditions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const AboutPage = () => {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,16 +218,14 @@ const AboutPage = () => {
     mission: (
       <div className="space-y-4">
         <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-          At Wonderland Panel Beaters, our mission is to restore vehicles to
-          their pre-accident condition using state-of-the-art equipment, premium
-          materials, and expert craftsmanship. We are committed to providing
-          exceptional service with integrity, precision, and transparency.
+        To provide high quality Panel Beating and Spray  Painting services that enhances visibility on the competitive marketplace
+ contributing meaningfully to brand equity for our clients.
+
+          To become a leading one stop shop driven by efficiency, effectiveness, speed and responsiveness to market demands
         </p>
         <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-          We believe every vehicle deserves the highest quality of care, and
-          every customer deserves peace of mind. Our panel beating services are
-          backed by industry-leading warranties, ensuring your complete
-          satisfaction.
+
+        To become a leading one stop shop driven by efficiency, effectiveness, speed and responsiveness to market demands
         </p>
       </div>
     ),
@@ -121,12 +270,6 @@ const AboutPage = () => {
     ),
     commitment: (
       <div className="space-y-4">
-        <div className="flex items-center gap-3 mb-2">
-          <CheckCircle className="text-green-500 flex-shrink-0" size={20} />
-          <p className="text-gray-700 font-medium">
-            Lifetime Warranty on Workmanship
-          </p>
-        </div>
         <div className="flex items-center gap-3 mb-2">
           <CheckCircle className="text-green-500 flex-shrink-0" size={20} />
           <p className="text-gray-700 font-medium">
@@ -195,11 +338,11 @@ const AboutPage = () => {
             <div className="flex flex-col space-y-4">
               <div className="flex items-center gap-3">
                 <Phone size={20} className="text-red-600" />
-                <span>+1 (555) 123-4567</span>
+                <span>+263 77 233 4587</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={20} className="text-red-600" />
-                <span>info@wonderlandpanelbeaters.com</span>
+                <span>admin@wonderland.co.zw</span>
               </div>
               <div className="flex space-x-4 mt-4">
                 <Facebook className="text-blue-600" />
@@ -248,10 +391,10 @@ const AboutPage = () => {
               <span className="text-red-500">Life</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl text-white/90 mb-6 leading-relaxed max-w-2xl">
-              For over 15 years, Wonderland Panel Beaters has been the trusted
-              name in premium auto body repair. Our expert craftsmen restore
-              vehicles to their pre-accident condition using cutting-edge
-              techniques and premium materials.
+            Wonderland Panel Beaters (Pvt) Ltd is a small company dedicated to making all its clients secure in the knowledge
+            that all their panel beating and spray painting requirements are catered for quickly and efficiently since 1997. Our clients
+            always come first in all our dealings and are the sole reason for our existence.
+
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4">
               <motion.button
@@ -318,7 +461,7 @@ const AboutPage = () => {
               </div>
               <div className="absolute -bottom-5 md:-bottom-10 -right-5 md:-right-10 bg-red-600 text-white p-4 md:p-8 rounded-xl shadow-lg max-w-xs">
                 <div className="text-3xl md:text-5xl font-bold mb-1 md:mb-2">
-                  15+
+                  26+
                 </div>
                 <div className="text-sm md:text-xl">
                   Years of Excellence in Auto Body Repair
@@ -437,6 +580,8 @@ const AboutPage = () => {
         </div>
       </section>
 
+      <TermsAndConditions />
+      <WonderlandOrgChart />
       {/* Team Section */}
       <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -462,21 +607,21 @@ const AboutPage = () => {
                 position: "Master Technician",
                 image: "/user.jpg",
                 cert: "I-CAR Platinum Certified",
-                exp: "20+ Years Experience",
+                exp: "26+ Years Experience",
               },
               {
                 name: "Mrs Johns",
                 position: "Paint Specialist",
                 image: "/user.jpg",
                 cert: "PPG Certified",
-                exp: "15+ Years Experience",
+                exp: "26+ Years Experience",
               },
               {
                 name: "Chelsea Johns",
                 position: "Marketing",
                 image: "/user.jpg",
                 cert: "ASE Certified",
-                exp: "12+ Years Experience",
+                exp: "7+ Years Experience",
               },
             ].map((member, index) => (
               <motion.div
@@ -549,13 +694,13 @@ const AboutPage = () => {
             <div className="space-y-16 md:space-y-24">
               {[
                 {
-                  year: "2008",
+                  year: "1997",
                   title: "Our Beginning",
                   description:
                     "Founded with just 3 team members and a passion for quality repairs",
                 },
                 {
-                  year: "2012",
+                  year: "2000",
                   title: "Expansion",
                   description:
                     "Moved to our current location and tripled our capacity",

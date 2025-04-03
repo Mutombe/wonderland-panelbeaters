@@ -101,8 +101,8 @@ const HomePage = () => {
             </motion.div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-8 leading-tight">
-              Perfection in Every
-              <span className="block text-red-500">Panel & Paint</span>
+            Quality
+              <span className="block text-red-500">You can bank on</span>
             </h1>
 
             <div className="grid lg:grid-cols-2 gap-8 mb-12">
@@ -114,7 +114,6 @@ const HomePage = () => {
                 {[
                   "Certified Professional Team",
                   "Latest Technology & Equipment",
-                  "Lifetime Warranty on Work",
                   "Free Detailed Estimates",
                 ].map((item, index) => (
                   <motion.div
@@ -1379,6 +1378,126 @@ const FeaturedServicesSection2 = () => {
       imageBg: "bg-[url('/dent.webp')]"
     },
     {
+      title: "Panel Beating",
+      icon: <Wrench size={32} />,
+      description: "Expert panel repair and reshaping",
+      features: ["Metal Reshaping", "Rust Repair", "Custom Fabrication"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/restorations.jpg')]"
+    },
+    {
+      title: "Spray Painting",
+      icon: <PaintBucket size={32} />,
+      description: "Professional automotive refinishing",
+      features: ["Climate-Controlled Booth", "Color Blending", "Clear Coat"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/panel.jpg')]"
+    },
+    {
+      title: "Vehicle Maintenance",
+      icon: <Clock size={32} />,
+      description: "Minor and major service packages",
+      features: ["Diagnostics", "Fluid Changes", "Component Replacement"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/vm.jpg')]"
+    },
+    {
+      title: "Auto Electrics",
+      icon: <AlertCircle size={32} />,
+      description: "Electrical system diagnosis and repair",
+      features: ["Wiring Repair", "Computer Diagnostics", "Battery Services"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/autoele.jpg')]"
+    },
+    {
+      title: "Upholstery",
+      icon: <Shield size={32} />,
+      description: "Interior restoration and custom work",
+      features: ["Seat Repairs", "Custom Leather", "Headliner Replacement"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/upholstery.jpeg')]"
+    },
+    {
+      title: "Mechanical Repairs",
+      icon: <Cog size={32} />,
+      description: "Engine and mechanical system repairs",
+      features: ["Engine Repair", "Transmission Service", "Brake Systems"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/mech.jpg')]"
+    },
+    {
+      title: "Vehicle Labelling",
+      icon: <FileText size={32} />,
+      description: "Professional branding and graphics",
+      features: ["Fleet Branding", "Vinyl Graphics", "Vehicle Wrapping"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/vlabelling.jpg')]"
+    },
+    {
+      title: "Windscreen Fitment",
+      icon: <Shield size={32} />,
+      description: "Expert glass replacement services",
+      features: ["Windscreen Replacement", "Side Windows", "Mirror Replacement"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/wfitment.webp')]"
+    },
+    {
+      title: "Car Valet",
+      icon: <Camera size={32} />,
+      description: "Interior and exterior detailing",
+      features: ["Deep Cleaning", "Paint Protection", "Engine Bay Detailing"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/valet.jpg')]"
+    },
+    {
+      title: "Car Breaking",
+      icon: <Wrench size={32} />,
+      description: "Environmentally responsible dismantling",
+      features: ["Parts Recovery", "Fluid Recycling", "Metal Recycling"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/cbreaking.webp')]"
+    },
+    {
       title: "Classic Restoration",
       icon: <Camera size={32} />,
       description: "Bringing vintage vehicles back to life",
@@ -1392,7 +1511,7 @@ const FeaturedServicesSection2 = () => {
       accentLight: "bg-red-100",
       textAccent: "text-red-500",
       borderAccent: "border-red-200",
-      imageBg: "bg-[url('resto.jpg')]"
+      imageBg: "bg-[url('/resto.jpg')]"
     },
     {
       title: "Insurance Claims",

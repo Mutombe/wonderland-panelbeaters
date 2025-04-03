@@ -87,6 +87,226 @@ const ServicesPage = () => {
         "Quality inspection",
       ],
     },
+    {
+      id: 4,
+      title: "Panel Beating",
+      icon: <Wrench size={32} />,
+      description: "Expert panel repair and replacement services",
+      longDescription:
+        "Our skilled panel beaters restore damaged vehicle panels to their original form using traditional craftsmanship and modern techniques. We handle everything from minor dents to major structural damage.",
+      features: [
+        "Metal panel reshaping",
+        "Welding and fabrication",
+        "Custom panel fabrication",
+        "Rust repair and prevention",
+        "Classic car restoration",
+      ],
+      process: [
+        "Comprehensive damage evaluation",
+        "Panel removal if necessary",
+        "Precision reshaping and repair",
+        "Surface preparation for painting",
+        "Fitment and alignment verification",
+      ],
+    },
+    {
+      id: 5,
+      title: "Spray Painting",
+      icon: <PaintBucket size={32} />,
+      description: "Professional automotive spray painting and refinishing",
+      longDescription:
+        "Our spray painting service uses climate-controlled spray booths and premium automotive paints to deliver flawless finishes. We offer everything from single-panel resprays to complete vehicle color changes.",
+      features: [
+        "Climate-controlled spray booths",
+        "High-quality automotive paints",
+        "Expert color blending",
+        "Metallic and pearl finish specialists",
+        "Environmental compliance",
+      ],
+      process: [
+        "Surface preparation and cleaning",
+        "Masking and protection",
+        "Primer and base coat application",
+        "Color coat application",
+        "Clear coat and polishing",
+      ],
+    },
+    {
+      id: 6,
+      title: "Vehicle Maintenance",
+      icon: <Clock size={32} />,
+      description: "Comprehensive minor and major service packages",
+      longDescription:
+        "Keep your vehicle running at peak performance with our minor and major service packages. Our certified technicians follow manufacturer specifications to ensure reliability and longevity of your vehicle.",
+      features: [
+        "Manufacturer-specified maintenance",
+        "Comprehensive diagnostics",
+        "Fluid replacement and top-ups",
+        "Filter replacement",
+        "Component inspection and replacement",
+      ],
+      process: [
+        "Initial vehicle assessment",
+        "Diagnostic scanning",
+        "Service execution based on schedule",
+        "Quality check and road test",
+        "Detailed service report",
+      ],
+    },
+    {
+      id: 7,
+      title: "Auto Electrics",
+      icon: <AlertCircle size={32} />,
+      description: "Complete automotive electrical system diagnosis and repair",
+      longDescription:
+        "Our auto electrical specialists diagnose and repair all vehicle electrical issues using advanced diagnostic equipment. From simple battery replacements to complex wiring problems, we keep your vehicle's electrical systems operating perfectly.",
+      features: [
+        "Computerized electrical diagnostics",
+        "Wiring repair and replacement",
+        "Battery testing and replacement",
+        "Alternator and starter repair",
+        "Electronic module programming",
+      ],
+      process: [
+        "System diagnostic scan",
+        "Circuit testing and analysis",
+        "Component isolation and testing",
+        "Repair or replacement service",
+        "System verification and testing",
+      ],
+    },
+    {
+      id: 8,
+      title: "Upholstery",
+      icon: <Shield size={32} />,
+      description: "Interior restoration and custom upholstery solutions",
+      longDescription:
+        "Revitalize your vehicle's interior with our professional upholstery services. From repairs to complete custom interior redesigns, our upholstery experts work with premium materials to create beautiful, durable interiors.",
+      features: [
+        "Seat repair and reupholstering",
+        "Custom leather interiors",
+        "Headliner replacement",
+        "Door panel and dashboard repair",
+        "Carpet replacement and cleaning",
+      ],
+      process: [
+        "Interior assessment and consultation",
+        "Material selection and design",
+        "Disassembly and pattern creation",
+        "Custom fabrication and fitting",
+        "Final assembly and quality check",
+      ],
+    },
+    {
+      id: 9,
+      title: "Mechanical Repairs",
+      icon: <Cog size={32} />,
+      description: "Comprehensive engine and mechanical system repairs",
+      longDescription:
+        "Our certified mechanics provide expert repair services for all vehicle mechanical systems. From engine rebuilds to transmission repairs, we have the expertise and equipment to handle complex mechanical issues.",
+      features: [
+        "Engine diagnostics and repair",
+        "Transmission service and repair",
+        "Suspension and steering system repairs",
+        "Brake system service",
+        "Cooling system maintenance",
+      ],
+      process: [
+        "Comprehensive mechanical inspection",
+        "Diagnostic testing and analysis",
+        "Detailed repair plan and estimate",
+        "Professional repair execution",
+        "Post-repair testing and verification",
+      ],
+    },
+    {
+      id: 10,
+      title: "Vehicle Labelling",
+      icon: <FileText size={32} />,
+      description: "Professional vehicle branding and commercial graphics",
+      longDescription:
+        "Transform your vehicles with our professional labelling and branding services. Whether for fleet identification, business promotion, or custom designs, we apply high-quality vinyl graphics that withstand the elements.",
+      features: [
+        "Commercial fleet branding",
+        "Custom vinyl graphics",
+        "Reflective safety markings",
+        "Vehicle wrapping",
+        "UV-resistant materials",
+      ],
+      process: [
+        "Design consultation and mockup",
+        "Surface preparation",
+        "Precision cutting and alignment",
+        "Professional application",
+        "Final inspection and care instructions",
+      ],
+    },
+    {
+      id: 11,
+      title: "Windscreen Replacements",
+      icon: <Shield size={32} />,
+      description: "Expert windscreen and mirror replacement services",
+      longDescription:
+        "Our windscreen specialists provide professional replacement of damaged windscreens, windows, and mirrors. We use only quality glass and proper sealing techniques to ensure safety and prevent leaks.",
+      features: [
+        "OEM-quality windscreen replacements",
+        "Side and rear window installation",
+        "Door mirror replacement",
+        "Chip repair services",
+        "Tinting options available",
+      ],
+      process: [
+        "Damage assessment",
+        "Glass selection and ordering",
+        "Safe removal of damaged glass",
+        "Precision installation and sealing",
+        "Leak testing and quality verification",
+      ],
+    },
+    {
+      id: 12,
+      title: "Car Valet",
+      icon: <Camera size={32} />,
+      description: "Comprehensive interior and exterior detailing services",
+      longDescription:
+        "Our professional valet service restores your vehicle's appearance to showroom condition. From basic cleaning to premium detailing packages, we use specialist equipment and products for immaculate results.",
+      features: [
+        "Interior deep cleaning",
+        "Exterior wash and polish",
+        "Engine bay detailing",
+        "Paint correction and protection",
+        "Leather treatment and conditioning",
+      ],
+      process: [
+        "Initial condition assessment",
+        "Exterior wash and decontamination",
+        "Interior vacuuming and cleaning",
+        "Surface treatment and protection",
+        "Final inspection and touch-ups",
+      ],
+    },
+    {
+      id: 13,
+      title: "Car Breaking",
+      icon: <Wrench size={32} />,
+      description: "Environmentally responsible vehicle dismantling",
+      longDescription:
+        "Our car breaking service dismantles end-of-life vehicles in an environmentally responsible manner. We salvage quality used parts for resale and ensure proper recycling of all materials.",
+      features: [
+        "Certified vehicle dismantling",
+        "Quality used parts recovery",
+        "Environmental compliance",
+        "Fluid drainage and disposal",
+        "Metal recycling",
+      ],
+      process: [
+        "Vehicle assessment and documentation",
+        "Hazardous material removal",
+        "Systematic parts removal and testing",
+        "Parts cataloging and storage",
+        "Remaining material recycling",
+      ],
+    }
   ];
 
   const ServiceCard = ({ service, isSelected, onClick }) => (
@@ -265,7 +485,6 @@ const Hero = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { icon: <Shield size={24} />, text: "Lifetime Warranty" },
               { icon: <Clock size={24} />, text: "Quick Turnaround" },
               { icon: <Cog size={24} />, text: "Expert Technicians" },
               { icon: <CheckCircle size={24} />, text: "Quality Guaranteed" },
