@@ -28,73 +28,85 @@ import { useNavigate } from "react-router-dom";
 
 export const WonderlandOrgChart = () => {
   return (
-    <div className="w-full flex justify-center">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" className="w-full max-w-4xl">
+    <div className="w-full p-4 flex justify-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 800 600"
+        className="w-full h-auto"
+        preserveAspectRatio="xMidYMid meet"
+      >
         {/* Background */}
         <rect width="800" height="600" fill="#f9fafb" />
         
         {/* Title */}
-        <text x="400" y="40" fontFamily="Arial, sans-serif" fontSize="24" fontWeight="bold" textAnchor="middle" fill="#111827">Wonderland Panel Beaters Organizational Structure</text>
+        <text x="400" y="40" fontFamily="Arial, sans-serif" fontSize="20" fontWeight="bold" textAnchor="middle" fill="#111827">
+          <tspan x="400" dy="0">Wonderland Panel Beaters</tspan>
+          <tspan x="400" dy="25">Organizational Structure</tspan>
+        </text>
         
         {/* Board of Directors */}
-        <rect x="325" y="70" width="150" height="60" rx="5" fill="#ff0000" />
-        <text x="400" y="105" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Board of Directors</text>
+        <rect x="325" y="80" width="150" height="60" rx="5" fill="#dc2626" />
+        <text x="400" y="115" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="bold" textAnchor="middle" fill="white">Board of Directors</text>
         
         {/* Vertical Line from Board */}
-        <line x1="400" y1="130" x2="400" y2="160" stroke="#374151" strokeWidth="2" />
+        <line x1="400" y1="140" x2="400" y2="170" stroke="#374151" strokeWidth="2" />
         
         {/* Secretary */}
-        <rect x="250" y="160" width="160" height="60" rx="5" fill="#ff0000" />
-        <text x="330" y="195" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Secretary</text>
+        <rect x="250" y="170" width="160" height="60" rx="5" fill="#dc2626" />
+        <text x="330" y="205" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="bold" textAnchor="middle" fill="white">Secretary</text>
         
-        {/* Manager Level */}
-        {/* Line Connecting Three Managers */}
-        <line x1="150" y1="260" x2="650" y2="260" stroke="#374151" strokeWidth="2" />
-        {/* Vertical Lines to Managers */}
-        <line x1="150" y1="260" x2="150" y2="290" stroke="#374151" strokeWidth="2" />
-        <line x1="400" y1="160" x2="400" y2="290" stroke="#374151" strokeWidth="2" />
-        <line x1="650" y1="260" x2="650" y2="290" stroke="#374151" strokeWidth="2" />
+        {/* Manager Level Lines */}
+        <line x1="150" y1="270" x2="650" y2="270" stroke="#374151" strokeWidth="2" />
+        <line x1="150" y1="270" x2="150" y2="300" stroke="#374151" strokeWidth="2" />
+        <line x1="400" y1="170" x2="400" y2="300" stroke="#374151" strokeWidth="2" />
+        <line x1="650" y1="270" x2="650" y2="300" stroke="#374151" strokeWidth="2" />
         
         {/* Finance & Admin Manager */}
-        <rect x="50" y="290" width="200" height="60" rx="5" fill="#ff0000" />
-        <text x="150" y="325" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Finance & Administration Manager</text>
+        <rect x="50" y="300" width="200" height="60" rx="5" fill="#dc2626" />
+        <text x="150" y="330" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="bold" textAnchor="middle" fill="white">
+          <tspan x="150" dy="0">Finance &</tspan>
+          <tspan x="150" dy="20">Administration Manager</tspan>
+        </text>
         
         {/* Sales & Marketing Executive */}
-        <rect x="300" y="290" width="200" height="60" rx="5" fill="#ff0000" />
-        <text x="400" y="325" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Sales & Marketing Executive</text>
+        <rect x="300" y="300" width="200" height="60" rx="5" fill="#dc2626" />
+        <text x="400" y="330" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="bold" textAnchor="middle" fill="white">
+          <tspan x="400" dy="0">Sales &</tspan>
+          <tspan x="400" dy="20">Marketing Executive</tspan>
+        </text>
         
         {/* Workshop Manager */}
-        <rect x="550" y="290" width="200" height="60" rx="5" fill="#ff0000" />
-        <text x="650" y="325" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Workshop Manager</text>
+        <rect x="550" y="300" width="200" height="60" rx="5" fill="#dc2626" />
+        <text x="650" y="335" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="bold" textAnchor="middle" fill="white">Workshop Manager</text>
         
         {/* Vertical Lines to Next Level */}
-        <line x1="150" y1="350" x2="150" y2="380" stroke="#374151" strokeWidth="2" />
-        <line x1="400" y1="350" x2="400" y2="380" stroke="#374151" strokeWidth="2" />
-        <line x1="650" y1="350" x2="650" y2="380" stroke="#374151" strokeWidth="2" />
+        <line x1="150" y1="360" x2="150" y2="390" stroke="#374151" strokeWidth="2" />
+        <line x1="400" y1="360" x2="400" y2="390" stroke="#374151" strokeWidth="2" />
+        <line x1="650" y1="360" x2="650" y2="390" stroke="#374151" strokeWidth="2" />
         
         {/* Administration Staff */}
-        <rect x="75" y="380" width="150" height="60" rx="5" fill="#ff0000" />
-        <text x="150" y="415" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Administration Staff</text>
+        <rect x="75" y="390" width="150" height="60" rx="5" fill="#dc2626" />
+        <text x="150" y="425" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="bold" textAnchor="middle" fill="white">Administration Staff</text>
         
         {/* Sales Representative */}
-        <rect x="325" y="380" width="150" height="60" rx="5" fill="#ff0000" />
-        <text x="400" y="415" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Sales Representative</text>
+        <rect x="325" y="390" width="150" height="60" rx="5" fill="#dc2626" />
+        <text x="400" y="425" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="bold" textAnchor="middle" fill="white">Sales Representative</text>
         
         {/* Foreman */}
-        <rect x="575" y="380" width="150" height="60" rx="5" fill="#ff0000" />
-        <text x="650" y="415" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Foreman</text>
+        <rect x="575" y="390" width="150" height="60" rx="5" fill="#dc2626" />
+        <text x="650" y="425" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="bold" textAnchor="middle" fill="white">Foreman</text>
         
         {/* Vertical Lines to Bottom Level */}
-        <line x1="150" y1="440" x2="150" y2="470" stroke="#374151" strokeWidth="2" />
-        <line x1="650" y1="440" x2="650" y2="470" stroke="#374151" strokeWidth="2" />
+        <line x1="150" y1="450" x2="150" y2="480" stroke="#374151" strokeWidth="2" />
+        <line x1="650" y1="450" x2="650" y2="480" stroke="#374151" strokeWidth="2" />
         
         {/* Canteen Staff */}
-        <rect x="75" y="470" width="150" height="60" rx="5" fill="#ff0000" />
-        <text x="150" y="505" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Canteen Staff</text>
+        <rect x="75" y="480" width="150" height="60" rx="5" fill="#dc2626" />
+        <text x="150" y="515" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="bold" textAnchor="middle" fill="white">Canteen Staff</text>
         
         {/* Workshop Staff */}
-        <rect x="575" y="470" width="150" height="60" rx="5" fill="#ff0000" />
-        <text x="650" y="505" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" textAnchor="middle" fill="white">Workshop Staff</text>
+        <rect x="575" y="480" width="150" height="60" rx="5" fill="#dc2626" />
+        <text x="650" y="515" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="bold" textAnchor="middle" fill="white">Workshop Staff</text>
         
         {/* Footer */}
         <text x="400" y="570" fontFamily="Arial, sans-serif" fontSize="12" textAnchor="middle" fill="#374151">Wonderland Panel Beaters (Pvt) Ltd - Established 1997</text>
@@ -102,7 +114,6 @@ export const WonderlandOrgChart = () => {
     </div>
   );
 };
-
 
 export const TermsAndConditions = () => {
   return (
@@ -162,7 +173,7 @@ export const TermsAndConditions = () => {
             
             <div>
               <h3 className="text-xl font-bold mb-4 text-red-600">Company Information</h3>
-              <p className="mb-2"><span className="font-bold">Type of Company:</span> Private Limited company incorporated under the Companies Act (Chapter 24:03)</p>
+              <p className="mb-2"><span className="font-bold">Type of Company:</span> Private Limited company incorporated under the Companies Act of Zimbabwe (Chapter 24:03)</p>
               <p className="mb-2"><span className="font-bold">Established:</span> 1997</p>
               <p className="mb-2"><span className="font-bold">Years in Operation:</span> 26+ years</p>
             </div>
@@ -289,7 +300,6 @@ const AboutPage = () => {
         <div className="flex items-center gap-3 mb-2">
           <CheckCircle className="text-green-500 flex-shrink-0" size={20} />
           <p className="text-gray-700 font-medium">
-            Insurance Claim Assistance
           </p>
         </div>
       </div>
@@ -603,22 +613,22 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {[
               {
-                name: "Mr Johns",
-                position: "Master Technician",
+                name: "Allen Johns",
+                position: "Managing Director",
                 image: "/user.jpg",
                 cert: "I-CAR Platinum Certified",
                 exp: "26+ Years Experience",
               },
               {
-                name: "Mrs Johns",
-                position: "Paint Specialist",
+                name: "Eddington Mujuru",
+                position: "Workshop Manager",
                 image: "/user.jpg",
                 cert: "PPG Certified",
                 exp: "26+ Years Experience",
               },
               {
-                name: "Chelsea Johns",
-                position: "Marketing",
+                name: "Mirriam Johns",
+                position: "Finance and Admin Executive",
                 image: "/user.jpg",
                 cert: "ASE Certified",
                 exp: "7+ Years Experience",
@@ -649,13 +659,13 @@ const AboutPage = () => {
                   </p>
 
                   <div className="space-y-2">
-                    <div className="flex items-center gap-2 text-xs md:text-sm text-gray-600">
+                    {/*<div className="flex items-center gap-2 text-xs md:text-sm text-gray-600">
                       <Award
                         size={16}
                         className="text-yellow-500 flex-shrink-0"
                       />
                       <span>{member.cert}</span>
-                    </div>
+                    </div>*/}
                     <div className="flex items-center gap-2 text-xs md:text-sm text-gray-600">
                       <Calendar size={16} className="flex-shrink-0" />
                       <span>{member.exp}</span>
@@ -691,7 +701,7 @@ const AboutPage = () => {
             {/* Timeline Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-red-100"></div>
 
-            <div className="space-y-16 md:space-y-24">
+            {/*<div className="space-y-16 md:space-y-24">
               {[
                 {
                   year: "1997",
@@ -727,10 +737,10 @@ const AboutPage = () => {
                     index % 2 === 0 ? "justify-start" : "justify-end"
                   }`}
                 >
-                  {/* Timeline Dot */}
+                  {/* Timeline Dot 
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 rounded-full bg-red-600 z-10"></div>
 
-                  {/* Content Box */}
+                  {/* Content Box 
                   <div
                     className={`w-5/12 bg-white p-4 md:p-8 rounded-xl shadow-lg ${
                       index % 2 === 0 ? "mr-auto" : "ml-auto"
@@ -748,7 +758,7 @@ const AboutPage = () => {
                   </div>
                 </motion.div>
               ))}
-            </div>
+            </div>*/} 
           </div>
 
           {/* Timeline for small screens */}
@@ -825,7 +835,7 @@ const AboutPage = () => {
 
 const StatisticsSection = () => {
   const stats = [
-    { value: 15, label: "Years Experience", suffix: "+" },
+    { value: 26, label: "Years Experience", suffix: "+" },
     { value: 10000, label: "Vehicles Repaired", suffix: "+" },
     { value: 99, label: "Customer Satisfaction", suffix: "%" },
     { value: 24, label: "Emergency Service", suffix: "/7" },

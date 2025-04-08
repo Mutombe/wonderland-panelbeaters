@@ -11,7 +11,7 @@ const PortfolioPage = () => {
     "FBC Insurance",
     "Alliance Insurance",
     "Hunter Adams Insurance Brokers",
-    "Parogon Printers",
+    "Paragon Printing and Packaging",
     "Old Mutual Insurance",
     "Ministry Of Industry",
     "Zimbabwe Power Company",
@@ -259,7 +259,7 @@ const PortfolioPage = () => {
       <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Our Global Reach</h2>
+            <h2 className="text-3xl font-bold mb-6">Our Reach</h2>
             <p className="text-lg text-gray-600 mb-12">
               Wonderland Panel Beaters sources high-quality products from international markets to provide the best service to our clients.
             </p>

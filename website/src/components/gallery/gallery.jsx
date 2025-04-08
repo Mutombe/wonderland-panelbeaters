@@ -33,8 +33,20 @@ const GalleryPage = () => {
       category: 'Collision Repair',
       title: 'Side Panel Collision Repair',
       description: 'Complete restoration of severe side impact damage',
-      afterImage: '/pb1.jpg',
-      beforeImage: '/pb2.jpg',
+      afterImage: '/fortuner1.jpeg',
+      beforeImage: '/fortuner2.jpeg',
+      clientName: 'Simbarashe Mutombe',
+      testimonial: "Incredible work! You can't even tell my car was in an accident.",
+      rating: 5,
+      tags: ['Panel Replacement', 'Paint Matching', 'Structural Repair']
+    },
+    {
+      id: 1,
+      category: 'Collision Repair',
+      title: 'Collision Repair',
+      description: 'Complete restoration of severe side impact damage',
+      afterImage: '/is2.jpeg',
+      beforeImage: '/is1.jpeg',
       clientName: 'Simbarashe Mutombe',
       testimonial: "Incredible work! You can't even tell my car was in an accident.",
       rating: 5,
@@ -42,64 +54,64 @@ const GalleryPage = () => {
     },
     {
       id: 2,
-      category: 'Custom Paint',
-      title: 'Metallic Blue Respray',
-      description: 'Full vehicle respray with premium metallic finish',
-      afterImage: '/pb3.jpg',
-      beforeImage: '/pb4.jpg',
+      category: 'Collision Repair',
+      title: 'Front End Collision Repair',
+      description: 'Comprehensive repair of front-end damage',
+      afterImage: '/nv01.jpeg',
+      beforeImage: '/nv02.jpeg',
       clientName: 'Innocent Maburutse',
       testimonial: 'The color is absolutely stunning, better than original!',
       rating: 5,
       tags: ['Custom Color', 'Metallic Finish', 'Clear Coat Protection']
     },
-    {
-      id: 3,
-      category: 'Dent Removal',
-      title: 'Hail Damage Restoration',
-      description: 'Multiple dent removal across hood and roof',
-      afterImage: '/pb5.jpg',
-      beforeImage: '/pb5b.jpg',
-      clientName: 'Jeff Moyo',
-      testimonial: 'Amazing results with no repainting required',
-      rating: 5,
-      tags: ['PDR Technique', 'Multiple Panels', 'Preservation']
-    },
-    {
-      id: 4,
-      category: 'Restoration',
-      title: 'Classic Car Restoration',
-      description: 'Complete restoration of 1967 classic model',
-      afterImage: '/pb7.jpg',
-      beforeImage: '/pb8.jpg',
-      clientName: 'David Crow',
-      testimonial: "You brought my father's car back to life. Incredible craftsmanship!",
-      rating: 5,
-      tags: ['Vintage', 'Full Restoration', 'Panel Fabrication']
-    },
-    {
-      id: 5,
-      category: 'Collision Repair',
-      title: 'Front End Collision Repair',
-      description: 'Comprehensive repair of front-end damage',
-      afterImage: '/pb9.jpg',
-      beforeImage: '/pb10.jpg',
-      clientName: 'Jennifer Mada',
-      testimonial: 'Perfect repair and finished ahead of schedule!',
-      rating: 5,
-      tags: ['Bumper Replacement', 'Frame Alignment', 'Headlight Restoration']
-    },
-    {
-      id: 6,
-      category: 'Custom Paint',
-      title: 'Matte Black Conversion',
-      description: 'Full vehicle conversion to premium matte finish',
-      afterImage: '/pb11.jpg',
-      beforeImage: '/pb12.jpg',
-      clientName: 'Jasper Munetsi',
-      testimonial: 'The matte finish is exactly what I wanted. Turns heads everywhere!',
-      rating: 5,
-      tags: ['Matte Finish', 'Full Vehicle', 'Protective Coating']
-    }
+    //{
+      //id: 3,
+      //category: 'Dent Removal',
+      //title: 'Hail Damage Restoration',
+      //description: 'Multiple dent removal across hood and roof',
+      //afterImage: '/pb5.jpg',
+      //beforeImage: '/pb5b.jpg',
+      //clientName: 'Jeff Moyo',
+      //testimonial: 'Amazing results with no repainting required',
+      //rating: 5,
+      //tags: ['PDR Technique', 'Multiple Panels', 'Preservation']
+    //},
+    //{
+      //id: 4,
+      //category: 'Restoration',
+      //title: 'Classic Car Restoration',
+      //description: 'Complete restoration of 1967 classic model',
+      //afterImage: '/pb7.jpg',
+      //beforeImage: '/pb8.jpg',
+      //clientName: 'David Crow',
+      //testimonial: "You brought my father's car back to life. Incredible craftsmanship!",
+      //rating: 5,
+      //tags: ['Vintage', 'Full Restoration', 'Panel Fabrication']
+    //},
+    //{
+      //id: 5,
+      //category: 'Collision Repair',
+      //title: 'Front End Collision Repair',
+      //description: 'Comprehensive repair of front-end damage',
+      //afterImage: '/pb9.jpg',
+      //beforeImage: '/pb10.jpg',
+      //clientName: 'Jennifer Mada',
+      //testimonial: 'Perfect repair and finished ahead of schedule!',
+      //rating: 5,
+      //tags: ['Bumper Replacement', 'Frame Alignment', 'Headlight Restoration']
+    //},
+    //{
+      //id: 6,
+      //category: 'Custom Paint',
+      //title: 'Matte Black Conversion',
+      //description: 'Full vehicle conversion to premium matte finish',
+      //afterImage: '/pb11.jpg',
+      //beforeImage: '/pb12.jpg',
+      //clientName: 'Jasper Munetsi',
+      //testimonial: 'The matte finish is exactly what I wanted. Turns heads everywhere!',
+      //rating: 5,
+      //tags: ['Matte Finish', 'Full Vehicle', 'Protective Coating']
+    //}
   ];
   
   // Filter gallery items based on active category
@@ -455,7 +467,7 @@ const GalleryPage = () => {
               <div className="bg-white/5 backdrop-blur-md rounded-b-xl p-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-red-500 rounded-full w-12 h-12 flex items-center justify-center text-lg font-bold text-white shrink-0">
-                    {filteredItems[currentComparisonIndex].clientName.charAt(0)}
+                    {/*{filteredItems[currentComparisonIndex].clientName.charAt(0)}*/}
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-2">
