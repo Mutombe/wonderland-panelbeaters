@@ -1338,46 +1338,6 @@ const FAQItem = ({ question, answer }) => {
 const FeaturedServicesSection2 = () => {
   const services = [
     {
-      title: "Collision Repair",
-      icon: <Car size={32} />,
-      description: "Complete structural repair and restoration",
-      features: [
-        "Frame Straightening",
-        "Panel Replacement",
-        "Structural Repair",
-      ],
-      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
-      accent: "bg-red-500",
-      accentLight: "bg-red-100",
-      textAccent: "text-red-500",
-      borderAccent: "border-red-200",
-      imageBg: "bg-[url('/collision.jpg')]"
-    },
-    {
-      title: "Custom Paint",
-      icon: <PaintBucket size={32} />,
-      description: "Premium paint jobs and color matching",
-      features: ["Color Matching", "Custom Finishes", "Paint Protection"],
-      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
-      accent: "bg-red-500",
-      accentLight: "bg-red-100",
-      textAccent: "text-red-500",
-      borderAccent: "border-red-200",
-      imageBg: "bg-[url('/panel2.jpg')]"
-    },
-    {
-      title: "Dent Removal",
-      icon: <Cog size={32} />,
-      description: "Paintless dent repair and panel beating",
-      features: ["PDR Technology", "Panel Beating", "Spot Repair"],
-      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
-      accent: "bg-red-500",
-      accentLight: "bg-red-100",
-      textAccent: "text-red-500",
-      borderAccent: "border-red-200",
-      imageBg: "bg-[url('/dent.webp')]"
-    },
-    {
       title: "Panel Beating",
       icon: <Wrench size={32} />,
       description: "Expert panel repair and reshaping",
@@ -1401,6 +1361,20 @@ const FeaturedServicesSection2 = () => {
       borderAccent: "border-red-200",
       imageBg: "bg-[url('/panel.jpg')]"
     },
+    {
+      title: "Dent Removal",
+      icon: <Cog size={32} />,
+      description: "Dent repair and panel beating",
+      features: ["PDR Technology", "Panel Beating", "Spot Repair"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/dent.webp')]"
+    },
+
+
     {
       title: "Vehicle Maintenance",
       icon: <Clock size={32} />,
@@ -1426,6 +1400,30 @@ const FeaturedServicesSection2 = () => {
       imageBg: "bg-[url('/autoele.jpg')]"
     },
     {
+      title: "Fleet Maintenance",
+      icon: <Users size={32} />,
+      description: "Specialized care for business vehicle fleets",
+      features: ["Priority Service", "Volume Discounts", "Maintenance Plans"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/fleet.jpg')]"
+    },
+    {
+      title: "Suspensions",
+      icon: <FileText size={32} />,
+      description: "Vehicle Suspensions",
+      features: ["Direct Billing", "Documentation", "Full Support"],
+      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
+      accent: "bg-red-500",
+      accentLight: "bg-red-100",
+      textAccent: "text-red-500",
+      borderAccent: "border-red-200",
+      imageBg: "bg-[url('/collision.jpg')]"
+    },
+    {
       title: "Upholstery",
       icon: <Shield size={32} />,
       description: "Interior restoration and custom work",
@@ -1438,7 +1436,7 @@ const FeaturedServicesSection2 = () => {
       imageBg: "bg-[url('/upholstery.jpeg')]"
     },
     {
-      title: "Mechanical Repairs",
+      title: "Spares",
       icon: <Cog size={32} />,
       description: "Engine and mechanical system repairs",
       features: ["Engine Repair", "Transmission Service", "Brake Systems"],
@@ -1450,7 +1448,7 @@ const FeaturedServicesSection2 = () => {
       imageBg: "bg-[url('/mech.jpg')]"
     },
     {
-      title: "Vehicle Labelling",
+      title: "Coach Building",
       icon: <FileText size={32} />,
       description: "Professional branding and graphics",
       features: ["Fleet Branding", "Vinyl Graphics", "Vehicle Wrapping"],
@@ -1462,7 +1460,7 @@ const FeaturedServicesSection2 = () => {
       imageBg: "bg-[url('/vlabelling.jpg')]"
     },
     {
-      title: "Windscreen Fitment",
+      title: "Windscreen & Door Mirror Fitment",
       icon: <Shield size={32} />,
       description: "Expert glass replacement services",
       features: ["Windscreen Replacement", "Side Windows", "Mirror Replacement"],
@@ -1513,30 +1511,8 @@ const FeaturedServicesSection2 = () => {
       borderAccent: "border-red-200",
       imageBg: "bg-[url('/resto.jpg')]"
     },
-    {
-      title: "Insurance Claims",
-      icon: <FileText size={32} />,
-      description: "Hassle-free insurance claim processing",
-      features: ["Direct Billing", "Documentation", "Full Support"],
-      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
-      accent: "bg-red-500",
-      accentLight: "bg-red-100",
-      textAccent: "text-red-500",
-      borderAccent: "border-red-200",
-      imageBg: "bg-[url('/claim.jpg')]"
-    },
-    {
-      title: "Fleet Services",
-      icon: <Users size={32} />,
-      description: "Specialized care for business vehicle fleets",
-      features: ["Priority Service", "Volume Discounts", "Maintenance Plans"],
-      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
-      accent: "bg-red-500",
-      accentLight: "bg-red-100",
-      textAccent: "text-red-500",
-      borderAccent: "border-red-200",
-      imageBg: "bg-[url('/fleet.jpg')]"
-    },
+
+
   ];
 
   return (
@@ -1628,7 +1604,7 @@ const FeaturedServicesSection2 = () => {
                 </div>
                 
                 {/* Benefits List */}
-                <div className={`p-4 rounded-lg bg-white/90 backdrop-blur-sm mb-6 border ${service.borderAccent}`}>
+                {/*<div className={`p-4 rounded-lg bg-white/90 backdrop-blur-sm mb-6 border ${service.borderAccent}`}>
                   <h4 className={`font-medium mb-3 ${service.textAccent} flex items-center gap-2`}>
                     <Shield size={16} />
                     Service Benefits
@@ -1644,7 +1620,7 @@ const FeaturedServicesSection2 = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div>*/}
                 
                 {/* Additional Information */}
                 <div className="flex items-center justify-between text-sm text-gray-600 mb-6">

@@ -22,72 +22,6 @@ const ServicesPage = () => {
 
   const mainServices = [
     {
-      id: 1,
-      title: "Collision Repair",
-      icon: <Car size={32} />,
-      description: "Complete collision repair and vehicle restoration services",
-      longDescription:
-        "Our comprehensive collision repair service handles everything from minor damages to major accident repairs. We use state-of-the-art equipment and techniques to restore your vehicle to its pre-accident condition.",
-      features: [
-        "Frame straightening and alignment",
-        "Panel repair and replacement",
-        "Structural repairs",
-        "Post-repair safety inspections",
-        "Insurance claim assistance",
-      ],
-      process: [
-        "Initial damage assessment",
-        "Digital imaging and documentation",
-        "Repair plan development",
-        "Professional repair execution",
-        "Quality control inspection",
-      ],
-    },
-    {
-      id: 2,
-      title: "Premium Paint Services",
-      icon: <PaintBucket size={32} />,
-      description: "Expert color matching and premium paint finishes",
-      longDescription:
-        "Our paint shop delivers showroom-quality finishes using premium materials and advanced spray techniques. We guarantee perfect color matching and lasting protection.",
-      features: [
-        "Computerized color matching",
-        "Premium paint products",
-        "Clear coat protection",
-        "Custom paint jobs",
-        "Paint correction services",
-      ],
-      process: [
-        "Surface preparation",
-        "Primer application",
-        "Color matching verification",
-        "Paint application",
-        "Clear coat and finishing",
-      ],
-    },
-    {
-      id: 3,
-      title: "Dent Removal",
-      icon: <Cog size={32} />,
-      description: "Paintless dent repair and panel beating",
-      longDescription:
-        "Using advanced PDR techniques and traditional panel beating methods, we remove dents while preserving your vehicle's original paint finish.",
-      features: [
-        "Paintless dent repair (PDR)",
-        "Traditional panel beating",
-        "Hail damage repair",
-        "Door ding removal",
-        "Minor collision repair",
-      ],
-      process: [
-        "Damage assessment",
-        "Technique selection",
-        "Dent removal process",
-        "Surface refinishing",
-        "Quality inspection",
-      ],
-    },
-    {
       id: 4,
       title: "Panel Beating",
       icon: <Wrench size={32} />,
@@ -109,6 +43,29 @@ const ServicesPage = () => {
         "Fitment and alignment verification",
       ],
     },
+    {
+      id: 3,
+      title: "Dent Removal",
+      icon: <Cog size={32} />,
+      description: "Dent repair and panel beating",
+      longDescription:
+        "Using advanced PDR techniques and traditional panel beating methods, we remove dents while preserving your vehicle's original paint finish.",
+      features: [
+        "Paintless dent repair (PDR)",
+        "Traditional panel beating",
+        "Hail damage repair",
+        "Door ding removal",
+        "Minor collision repair",
+      ],
+      process: [
+        "Damage assessment",
+        "Technique selection",
+        "Dent removal process",
+        "Surface refinishing",
+        "Quality inspection",
+      ],
+    },
+
     {
       id: 5,
       title: "Spray Painting",
@@ -133,7 +90,7 @@ const ServicesPage = () => {
     },
     {
       id: 6,
-      title: "Vehicle Maintenance",
+      title: "Fleet Maintenance",
       icon: <Clock size={32} />,
       description: "Comprehensive minor and major service packages",
       longDescription:
@@ -378,7 +335,7 @@ const ServicesPage = () => {
               </p>
 
               <div className="grid md:grid-cols-2 gap-12">
-                <div>
+{/*<div>
                   <h3 className="text-xl font-semibold mb-6">Key Features</h3>
                   <ul className="space-y-4">
                     {selectedService.features.map((feature, index) => (
@@ -388,7 +345,7 @@ const ServicesPage = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div>*/}
 
                 <div>
                   <h3 className="text-xl font-semibold mb-6">Our Process</h3>
