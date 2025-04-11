@@ -385,14 +385,7 @@ const HomePage = () => {
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: <Shield size={24} />,
-                  title: "Lifetime Warranty",
-                  description:
-                    "All our repairs come with a comprehensive lifetime warranty for your complete peace of mind.",
-                },
-                {
+              {[{
                   icon: <Award size={24} />,
                   title: "Certified Expertise",
                   description:
