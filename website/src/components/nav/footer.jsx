@@ -131,16 +131,20 @@ const Footer = () => {
                   17025 Cedora Road, Graniteside, Harare
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone size={16} className="text-red-500" />
-                <span className="text-gray-400">+263 77 233 4587</span>
-                <span className="text-gray-400">+263 77 270 9581</span>
-                <span className="text-gray-400">+263 77 239 2898</span>
-                <span className="text-gray-400">+263 24 275 9547</span>
+              <li className="flex items-start gap-3">
+                <Phone size={16} className="text-red-500 mt-1" />
+                <div className="text-gray-400 grid gap-1">
+                  <a href="tel:+263772334587" className="hover:text-white">+263 77 233 4587</a>
+                  <a href="tel:+263772709581" className="hover:text-white">+263 77 270 9581</a>
+                  <a href="tel:+263772392898" className="hover:text-white">+263 77 239 2898</a>
+                  <a href="tel:+263242759547" className="hover:text-white">+263 24 275 9547</a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-red-500" />
-                <span className="text-gray-400">admin@wonderland.co.zw</span>
+                <a href="mailto:admin@wonderland.co.zw" className="text-gray-400 hover:text-white">
+                  admin@wonderland.co.zw
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Clock size={16} className="text-red-500" />
@@ -154,6 +158,9 @@ const Footer = () => {
           <p>
             &copy; {new Date().getFullYear()} Wonderland Panel Beaters. All
             rights reserved.
+          </p>
+          <p className="mt-2">
+            Developed by <a href="https://zettabyte.com" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">Zettabyte</a>
           </p>
         </div>
       </div>

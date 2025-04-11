@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
   MapPin,
@@ -48,12 +48,90 @@ const ContactPage = () => {
     }, 1000);
   };
 
+  // Map component with Leaflet
+  const MapComponent = () => {
+    useEffect(() => {
+      // Create script and link elements to load Leaflet
+      const loadLeaflet = () => {
+        // Add Leaflet CSS if not already present
+        if (!document.querySelector('[href$="leaflet.css"]')) {
+          const linkEl = document.createElement('link');
+          linkEl.rel = 'stylesheet';
+          linkEl.href = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css';
+          document.head.appendChild(linkEl);
+        }
+        
+        // Add Leaflet JS if not already present
+        if (!window.L) {
+          const scriptEl = document.createElement('script');
+          scriptEl.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js';
+          scriptEl.onload = initializeMap;
+          document.head.appendChild(scriptEl);
+        } else {
+          initializeMap();
+        }
+      };
+      
+      // Initialize map after Leaflet is loaded
+      const initializeMap = () => {
+        if (!document.getElementById('map')) return;
+        
+        // Check if map is already initialized to prevent duplicate maps
+        if (window.mapInstance) {
+          window.mapInstance.remove();
+        }
+        
+        // Initialize the map
+        const map = window.L.map('map').setView([-17.83, 31.05], 13); // Coordinates for Harare
+        window.mapInstance = map; // Store reference for cleanup
+        
+        // Add OpenStreetMap tile layer
+        window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        
+        // Add marker for business location
+        // These coordinates are for Harare - replace with your actual business location
+        const businessLocation = [-17.8689662,30.9646035];
+        const marker = window.L.marker(businessLocation).addTo(map);
+        
+        marker.bindPopup("<b>Wonderland Auto Body Shop</b><br>17025 Cedora Road, Graniteside, Harare").openPopup();
+      };
+      
+      loadLeaflet();
+      
+      // Clean up on component unmount
+      return () => {
+        if (window.mapInstance) {
+          window.mapInstance.remove();
+          window.mapInstance = null;
+        }
+      };
+    }, []);
+    
+    return (
+      <div id="map" className="w-full h-full rounded-xl"></div>
+    );
+  };
+
   const contactInfo = [
     {
       icon: <Phone size={24} />,
       title: 'Call Us',
-      details: ['+263 772 334 587', '+263 242 776 543'],
+      details: ['+263 772 334 587'],
       action: { text: 'Call Now', href: 'tel:+263772334587' }
+    },
+    {
+      icon: <Phone size={24} />,
+      title: 'Call Us',
+      details: ['0242759547'],
+      action: { text: 'Call Now', href: 'tel:0242759547' }
+    },
+    {
+      icon: <Phone size={24} />,
+      title: 'Call Us',
+      details: ['077 270 9851'],
+      action: { text: 'Call Now', href: 'tel:0772709851' }
     },
     {
       icon: <Mail size={24} />,
@@ -65,13 +143,13 @@ const ContactPage = () => {
       icon: <MapPin size={24} />,
       title: 'Visit Us',
       details: ['17025 Cedora Road, Graniteside', 'Harare, Zimbabwe'],
-      action: { text: 'Get Directions', href: '#' }
+      action: { text: 'Get Directions', href: 'https://g.co/kgs/dy6H9XV' }
     },
     {
       icon: <Clock size={24} />,
       title: 'Business Hours',
       details: ['Mon-Fri: 8AM-6PM', 'Sat: 9AM-2PM, Sun: Closed'],
-      action: { text: 'Book Appointment', href: '#' }
+      action: { text: 'Book Appointment', href: '/contact' }
     }
   ];
 
@@ -152,13 +230,8 @@ const ContactPage = () => {
                 </div>
 
                 <div className="relative rounded-xl overflow-hidden shadow-lg h-96">
-                  {/* Replace with actual map component or embed */}
-                  <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                    <Map size={48} className="text-gray-400" />
-                    <span className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-lg shadow text-sm font-medium">
-                      Interactive Map
-                    </span>
-                  </div>
+                  {/* Real Map Component */}
+                  <MapComponent />
                 </div>
 
                 <div className="bg-gray-50 p-6 rounded-xl">
@@ -508,7 +581,7 @@ const ContactPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Auto Body Shop</h3>
+              <h3 className="text-xl font-bold mb-4">Wonderland Auto Body Shop</h3>
               <p className="text-gray-400 mb-6">
                 Professional auto body repairs and painting services in Harare, Zimbabwe.
               </p>
@@ -559,7 +632,7 @@ const ContactPage = () => {
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <MapPin className="text-red-500 mr-3 flex-shrink-0 mt-1" size={18} />
-                  <span className="text-gray-400">123 Repair Street, Harare, Zimbabwe</span>
+                  <span className="text-gray-400">17025 Cedora Road, Graniteside, Harare, Zimbabwe</span>
                 </li>
                 <li className="flex items-center">
                   <Phone className="text-red-500 mr-3 flex-shrink-0" size={18} />
@@ -567,7 +640,7 @@ const ContactPage = () => {
                 </li>
                 <li className="flex items-center">
                   <Mail className="text-red-500 mr-3 flex-shrink-0" size={18} />
-                  <span className="text-gray-400">info@autobodyshop.com</span>
+                  <span className="text-gray-400">admin@wonderland.co.zw</span>
                 </li>
                 <li className="flex items-center">
                   <Clock className="text-red-500 mr-3 flex-shrink-0" size={18} />
@@ -579,7 +652,7 @@ const ContactPage = () => {
           
           <div className="border-t border-gray-700 mt-12 pt-8 text-center">
             <p className="text-gray-400">
-              © {new Date().getFullYear()} Auto Body Shop. All rights reserved.
+              © {new Date().getFullYear()} Wonderland Auto Body Shop. All rights reserved.
             </p>
           </div>
         </div>

@@ -401,9 +401,9 @@ const AboutPage = () => {
               <span className="text-red-500">Life</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl text-white/90 mb-6 leading-relaxed max-w-2xl">
-            Wonderland Panel Beaters (Pvt) Ltd is a small company dedicated to making all its clients secure in the knowledge
-            that all their panel beating and spray painting requirements are catered for quickly and efficiently since 1997. Our clients
-            always come first in all our dealings and are the sole reason for our existence.
+              Wonderland Panel Beaters (Pvt) Ltd has been delivering reliable and efficient panel beating and spray painting services since 1997.
+              We are committed to meeting the unique needs of each client with precision and care. Our clients are at the heart of
+              everything we do—they are the foundation of our continued success and the driving force behind our commitment to excellence.
 
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4">
@@ -492,7 +492,7 @@ const AboutPage = () => {
                       Certified by
                     </div>
                     <div className="text-sm md:text-base font-bold">
-                      Auto Body Association
+                      Motor Industry Association of Zimbabwe
                     </div>
                   </div>
                 </div>
@@ -628,10 +628,10 @@ const AboutPage = () => {
               },
               {
                 name: "Mirriam Johns",
-                position: "Finance and Admin Executive",
+                position: "Finance and Administration Executive",
                 image: "/user.jpg",
                 cert: "ASE Certified",
-                exp: "7+ Years Experience",
+                exp: "26+ Years Experience",
               },
             ].map((member, index) => (
               <motion.div

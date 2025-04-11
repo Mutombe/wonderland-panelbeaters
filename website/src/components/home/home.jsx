@@ -191,12 +191,12 @@ const HomePage = () => {
             </p>
           </motion.div>
 
-          {/* Interactive Process Timeline */}
+          {/* Interactive Process Timeline 
           <div className="relative mb-20">
-            {/* Timeline Line */}
+         
             <div className="absolute top-0 bottom-0 left-1/2 w-1 bg-gradient-to-b from-red-300 to-red-500 transform -translate-x-1/2 hidden md:block" />
 
-            {/* Timeline Steps */}
+            
             {[
               {
                 number: "01",
@@ -259,7 +259,7 @@ const HomePage = () => {
                 ],
               },
             ].map((step, index) => (
-              <motion.div
+{/*<motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -269,7 +269,7 @@ const HomePage = () => {
                   index % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
               >
-                {/* Process Image */}
+          
                 <div
                   className={`w-full md:w-5/12 mb-8 md:mb-0 ${
                     index % 2 === 0 ? "md:pr-16" : "md:pl-16"
@@ -304,7 +304,7 @@ const HomePage = () => {
                   </motion.div>
                 </div>
 
-                {/* Timeline Node - Only visible on md and up */}
+                {/* Timeline Node - Only visible on md and up 
                 <div className="hidden md:flex items-center justify-center">
                   <motion.div
                     initial={{ scale: 0 }}
@@ -317,15 +317,15 @@ const HomePage = () => {
                       <div className="text-red-500">{step.icon}</div>
                     </div>
                   </motion.div>
-                </div>
+                </div>*/}
 
-                {/* Process Details */}
+                {/* Process Details 
                 <div
                   className={`w-full md:w-5/12 ${
                     index % 2 === 0 ? "md:pl-16" : "md:pr-16"
                   }`}
                 >
-                  {/* Mobile-only icon - hidden on md and up */}
+                  {/* Mobile-only icon - hidden on md and up 
                   <div className="flex items-center gap-4 mb-4 md:hidden">
                     <div className="bg-red-500 h-14 w-14 rounded-full flex items-center justify-center text-white shadow-lg">
                       {step.icon}
@@ -359,7 +359,7 @@ const HomePage = () => {
                     </ul>
                   </div>
 
-                  {/* Process number badge - desktop only */}
+                  {/* Process number badge - desktop only
                   <div className="hidden md:flex mt-6">
                     <div className="bg-gray-100 rounded-full px-4 py-1 text-sm flex items-center gap-2">
                       <span className="font-medium text-gray-500">
@@ -371,7 +371,7 @@ const HomePage = () => {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </div>*/}
 
           {/* Process Values */}
           <motion.div
@@ -439,11 +439,11 @@ const HomePage = () => {
                 answer:
                   "Yes, we offer complimentary courtesy vehicles for repairs expected to take more than 24 hours, subject to availability. We also work with most insurance companies to arrange rental coverage when applicable.",
               },
-              {
+              {/*
                 question: "Will my insurance cover your repair services?",
                 answer:
                   "We work with all major insurance providers and can guide you through the claims process. Our team handles direct communication with insurance adjusters to ensure smooth processing of your claim.",
-              },
+              */}
             ].map((faq, index) => (
               <FAQItem
                 key={index}
@@ -569,11 +569,6 @@ const PricingSection = () => {
           included: false,
           description: "Ceramic coating for long-term protection",
         },
-        {
-          name: "Extended Warranty",
-          included: false,
-          description: "5-year warranty on all work performed",
-        },
       ],
       bestFor: [
         "Individual vehicle owners",
@@ -615,11 +610,6 @@ const PricingSection = () => {
           included: true,
           description: "Ceramic coating for long-term protection",
         },
-        {
-          name: "Extended Warranty",
-          included: false,
-          description: "5-year warranty on all work performed",
-        },
       ],
       bestFor: [
         "Luxury vehicle owners",
@@ -660,11 +650,6 @@ const PricingSection = () => {
           name: "Elite Paint Protection",
           included: true,
           description: "Premium ceramic coating with 10-year guarantee",
-        },
-        {
-          name: "Lifetime Warranty",
-          included: true,
-          description: "Lifetime warranty on all work performed",
         },
       ],
       bestFor: ["Classic car owners", "Show vehicles", "Premium & exotic cars"],
@@ -1163,12 +1148,6 @@ const FeaturedServicesSection = () => {
       ],
     },
     {
-      title: "Insurance Claims",
-      icon: <FileText size={32} />,
-      description: "Hassle-free insurance claim processing",
-      features: ["Direct Billing", "Documentation", "Full Support"],
-    },
-    {
       title: "Fleet Services",
       icon: <Users size={32} />,
       description: "Specialized care for business vehicle fleets",
@@ -1340,7 +1319,7 @@ const FeaturedServicesSection2 = () => {
     {
       title: "Panel Beating",
       icon: <Wrench size={32} />,
-      description: "Expert panel repair and reshaping",
+      description: "Expert restoration of damaged car panels and Chassis",
       features: ["Metal Reshaping", "Rust Repair", "Custom Fabrication"],
       gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
       accent: "bg-red-500",
@@ -1361,19 +1340,6 @@ const FeaturedServicesSection2 = () => {
       borderAccent: "border-red-200",
       imageBg: "bg-[url('/panel.jpg')]"
     },
-    {
-      title: "Dent Removal",
-      icon: <Cog size={32} />,
-      description: "Dent repair and panel beating",
-      features: ["PDR Technology", "Panel Beating", "Spot Repair"],
-      gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
-      accent: "bg-red-500",
-      accentLight: "bg-red-100",
-      textAccent: "text-red-500",
-      borderAccent: "border-red-200",
-      imageBg: "bg-[url('/dent.webp')]"
-    },
-
 
     {
       title: "Vehicle Maintenance",
@@ -1438,7 +1404,7 @@ const FeaturedServicesSection2 = () => {
     {
       title: "Spares",
       icon: <Cog size={32} />,
-      description: "Engine and mechanical system repairs",
+      description: "We supply parts for all vehicle makes",
       features: ["Engine Repair", "Transmission Service", "Brake Systems"],
       gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
       accent: "bg-red-500",
@@ -1450,17 +1416,17 @@ const FeaturedServicesSection2 = () => {
     {
       title: "Coach Building",
       icon: <FileText size={32} />,
-      description: "Professional branding and graphics",
+      description: "For all buses, trucks and trailers",
       features: ["Fleet Branding", "Vinyl Graphics", "Vehicle Wrapping"],
       gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
       accent: "bg-red-500",
       accentLight: "bg-red-100",
       textAccent: "text-red-500",
       borderAccent: "border-red-200",
-      imageBg: "bg-[url('/vlabelling.jpg')]"
+      imageBg: "bg-[url('/5.jpg')]"
     },
     {
-      title: "Windscreen & Door Mirror Fitment",
+      title: "Windscreen & Glass Fitments",
       icon: <Shield size={32} />,
       description: "Expert glass replacement services",
       features: ["Windscreen Replacement", "Side Windows", "Mirror Replacement"],
@@ -1486,7 +1452,7 @@ const FeaturedServicesSection2 = () => {
     {
       title: "Car Breaking",
       icon: <Wrench size={32} />,
-      description: "Environmentally responsible dismantling",
+      description: "For all different models",
       features: ["Parts Recovery", "Fluid Recycling", "Metal Recycling"],
       gradient: "from-red-500/20 via-rose-400/10 to-pink-500/20",
       accent: "bg-red-500",

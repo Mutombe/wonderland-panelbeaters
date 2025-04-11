@@ -273,18 +273,18 @@ const PortfolioPage = () => {
                 </div>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/*<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
                   { country: "Zimbabwe", desc: "Local suppliers providing quality materials" },
                   { country: "South Africa", desc: "Premium automotive parts and paint supplies" },
                   { country: "Dubai & Botswana", desc: "Specialized equipment and materials" }
                 ].map((location, index) => (
-                  <div key={index} className="p-4 rounded-lg border border-gray-100">
+                  {/*<div key={index} className="p-4 rounded-lg border border-gray-100">
                     <h3 className="font-bold text-lg mb-2">{location.country}</h3>
                     <p className="text-gray-600">{location.desc}</p>
                   </div>
                 ))}
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>
