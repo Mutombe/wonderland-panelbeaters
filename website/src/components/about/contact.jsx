@@ -82,7 +82,7 @@ const ContactPage = () => {
         }
         
         // Initialize the map
-        const map = window.L.map('map').setView([-17.83, 31.05], 13); // Coordinates for Harare
+        const map = window.L.map('map').setView([-17.8689835,31.0470053,17], 13); // Coordinates for Harare
         window.mapInstance = map; // Store reference for cleanup
         
         // Add OpenStreetMap tile layer
@@ -92,7 +92,7 @@ const ContactPage = () => {
         
         // Add marker for business location
         // These coordinates are for Harare - replace with your actual business location
-        const businessLocation = [-17.8689662,30.9646035];
+        const businessLocation = [-17.8689835,31.0470053,17];
         const marker = window.L.marker(businessLocation).addTo(map);
         
         marker.bindPopup("<b>Wonderland Auto Body Shop</b><br>17025 Cedora Road, Graniteside, Harare").openPopup();
@@ -148,7 +148,7 @@ const ContactPage = () => {
     {
       icon: <Clock size={24} />,
       title: 'Business Hours',
-      details: ['Mon-Fri: 8AM-6PM', 'Sat: 9AM-2PM, Sun: Closed'],
+      details: ['Mon-Fri: 8AM-4', 'Sat: 8AM-1PM, Sun: Closed'],
       action: { text: 'Book Appointment', href: '/contact' }
     }
   ];
@@ -234,7 +234,7 @@ const ContactPage = () => {
                   <MapComponent />
                 </div>
 
-                <div className="bg-gray-50 p-6 rounded-xl">
+                {/*<div className="bg-gray-50 p-6 rounded-xl">
                   <h3 className="text-xl font-bold mb-4">Emergency Services</h3>
                   <p className="text-gray-600 mb-4">
                     24/7 towing and emergency assistance available for accidents and breakdowns.
@@ -245,7 +245,7 @@ const ContactPage = () => {
                   >
                     <Phone size={20} /> Emergency Assistance
                   </a>
-                </div>
+                </div> */}
               </motion.div>
             </div>
 
@@ -512,14 +512,6 @@ const ContactPage = () => {
                 question: 'Do you work with insurance companies?',
                 answer: 'Yes, we work with all major insurance companies in Zimbabwe and can handle the claims process on your behalf, making the repair process hassle-free for you.'
               },
-              {
-                question: 'Do you offer warranties on your work?',
-                answer: 'Yes, we provide a 2-year warranty on all panel beating and painting work, giving you peace of mind about the quality of our repairs.'
-              },
-              {
-                question: 'Can I get a courtesy car while mine is being repaired?',
-                answer: 'Yes, we offer courtesy vehicles subject to availability. Please inquire about this service when booking your repair.'
-              }
             ].map((faq, index) => (
               <motion.div
                 key={index}

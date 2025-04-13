@@ -255,40 +255,6 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      {/* World Map Section */}
-      <section className="py-20 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Our Reach</h2>
-            <p className="text-lg text-gray-600 mb-12">
-              Wonderland Panel Beaters sources high-quality products from international markets to provide the best service to our clients.
-            </p>
-            
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="relative aspect-video bg-gray-200 rounded-lg overflow-hidden mb-6">
-                {/* This would be replaced with an actual map component or image */}
-                <div className="absolute inset-0 bg-[url('/api/placeholder/800/450')] bg-cover bg-center"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-gray-600 font-medium">Interactive World Map</p>
-                </div>
-              </div>
-              
-              {/*<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[
-                  { country: "Zimbabwe", desc: "Local suppliers providing quality materials" },
-                  { country: "South Africa", desc: "Premium automotive parts and paint supplies" },
-                  { country: "Dubai & Botswana", desc: "Specialized equipment and materials" }
-                ].map((location, index) => (
-                  {/*<div key={index} className="p-4 rounded-lg border border-gray-100">
-                    <h3 className="font-bold text-lg mb-2">{location.country}</h3>
-                    <p className="text-gray-600">{location.desc}</p>
-                  </div>
-                ))}
-              </div>*/}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-red-600 text-white">

@@ -284,7 +284,7 @@ const AboutPage = () => {
         <div className="flex items-center gap-3 mb-2">
           <CheckCircle className="text-green-500 flex-shrink-0" size={20} />
           <p className="text-gray-700 font-medium">
-            Only OEM and Premium Parts Used
+            Premium Parts Used
           </p>
         </div>
         <div className="flex items-center gap-3 mb-2">
@@ -678,7 +678,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Milestones Timeline */}
+      {/* Milestones Timeline
       <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <motion.div
@@ -696,9 +696,8 @@ const AboutPage = () => {
             </p>
           </motion.div>
 
-          {/* Timeline for medium and large screens */}
           <div className="hidden md:block relative">
-            {/* Timeline Line */}
+        
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-red-100"></div>
 
             {/*<div className="space-y-16 md:space-y-24">
@@ -758,10 +757,10 @@ const AboutPage = () => {
                   </div>
                 </motion.div>
               ))}
-            </div>*/} 
-          </div>
+            </div>*/}
+        
 
-          {/* Timeline for small screens */}
+          {/* Timeline for small screens *
           <div className="md:hidden space-y-6 md:space-y-8">
             {[
               {
@@ -808,10 +807,8 @@ const AboutPage = () => {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Footer CTA */}
+        </div>/}
+      </section>*/}
       <section className="bg-red-600 py-12">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">

@@ -43,28 +43,6 @@ const ServicesPage = () => {
         "Fitment and alignment verification",
       ],
     },
-    {
-      id: 3,
-      title: "Dent Removal",
-      icon: <Cog size={32} />,
-      description: "Dent repair and panel beating",
-      longDescription:
-        "Using advanced PDR techniques and traditional panel beating methods, we remove dents while preserving your vehicle's original paint finish.",
-      features: [
-        "Paintless dent repair (PDR)",
-        "Traditional panel beating",
-        "Hail damage repair",
-        "Door ding removal",
-        "Minor collision repair",
-      ],
-      process: [
-        "Damage assessment",
-        "Technique selection",
-        "Dent removal process",
-        "Surface refinishing",
-        "Quality inspection",
-      ],
-    },
 
     {
       id: 5,

@@ -168,7 +168,7 @@ const HomePage = () => {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-500/5 rounded-full translate-x-1/3 translate-y-1/3" />
 
         <div className="container mx-auto px-4 relative z-10">
-          <motion.div
+          {/*<motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -387,12 +387,6 @@ const HomePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <Shield size={24} />,
-                  title: "Lifetime Warranty",
-                  description:
-                    "All our repairs come with a comprehensive lifetime warranty for your complete peace of mind.",
-                },
-                {
                   icon: <Award size={24} />,
                   title: "Certified Expertise",
                   description:
@@ -434,16 +428,16 @@ const HomePage = () => {
                 answer:
                   "Repair timelines vary based on the extent of damage and required work. Minor repairs may take 1-3 days, while comprehensive restorations can take 1-2 weeks. We provide detailed timelines during your consultation and keep you updated throughout the process.",
               },
-              {
+              {/*
                 question: "Do you provide courtesy vehicles during repairs?",
                 answer:
                   "Yes, we offer complimentary courtesy vehicles for repairs expected to take more than 24 hours, subject to availability. We also work with most insurance companies to arrange rental coverage when applicable.",
-              },
-              {/*
+              */},
+              {
                 question: "Will my insurance cover your repair services?",
                 answer:
                   "We work with all major insurance providers and can guide you through the claims process. Our team handles direct communication with insurance adjusters to ensure smooth processing of your claim.",
-              */}
+              }
             ].map((faq, index) => (
               <FAQItem
                 key={index}
