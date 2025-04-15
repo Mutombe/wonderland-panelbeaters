@@ -130,17 +130,6 @@ const PortfolioPage = () => {
                 <Truck className="inline-block mr-2" size={20} />
                 Our Suppliers
               </button>
-              <button
-                className={`px-6 py-3 text-lg font-medium ${
-                  activeTab === "testimonials"
-                    ? "bg-red-600 text-white"
-                    : "bg-white text-gray-700 hover:bg-gray-50"
-                }`}
-                onClick={() => setActiveTab("testimonials")}
-              >
-                <Star className="inline-block mr-2" size={20} />
-                Testimonials
-              </button>
             </div>
           </div>
 

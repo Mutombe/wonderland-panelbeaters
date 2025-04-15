@@ -84,7 +84,7 @@ const Footer = () => {
                   href="/portfolio"
                   className="text-gray-400 hover:text-white"
                 >
-                  Collision Repair
+                  Panel Beating
                 </a>
               </li>
               <li>
@@ -92,7 +92,7 @@ const Footer = () => {
                   href="/portfolio"
                   className="text-gray-400 hover:text-white"
                 >
-                  Dent Removal
+                  Fleet Maintenance
                 </a>
               </li>
               <li>
@@ -100,7 +100,7 @@ const Footer = () => {
                   href="/portfolio"
                   className="text-gray-400 hover:text-white"
                 >
-                  Paint Restoration
+                  Suspensions
                 </a>
               </li>
               <li>
@@ -108,7 +108,7 @@ const Footer = () => {
                   href="/portfolio"
                   className="text-gray-400 hover:text-white"
                 >
-                  Frame Alignment
+                  Auto Electrics
                 </a>
               </li>
               <li>
@@ -116,7 +116,7 @@ const Footer = () => {
                   href="/portfolio"
                   className="text-gray-400 hover:text-white"
                 >
-                  Glass Replacement
+                  Upholstery
                 </a>
               </li>
             </ul>

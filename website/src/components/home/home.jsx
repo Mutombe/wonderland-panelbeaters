@@ -414,7 +414,7 @@ const HomePage = () => {
             </div>
                   </motion.div>
                   
-                  <PricingSection />
+              
 
           {/* FAQ Accordion */}
           <div className="mt-20 max-w-3xl mx-auto">
